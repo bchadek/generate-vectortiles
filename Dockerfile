@@ -1,16 +1,16 @@
-FROM node:6.10
+FROM node:6.1.0
 MAINTAINER Lukas Martinelli <me@lukasmartinelli.ch>
 
 WORKDIR /usr/src/app
 RUN npm install -g \
-          tl@0.8.1 \
+          tl \
           mapnik@3.7.2 \
-          @mapbox/mbtiles@0.10.0 \
-          tilelive@5.12.2 \
-          tilelive-tmsource@0.5.0 \
-          tilelive-vector@3.9.3 \
-          tilelive-bridge@2.3.1 \
-          tilelive-mapnik@0.6.18
+          @mapbox/mbtiles \
+          @mapbox/tilelive \
+          tilelive-tmsource \
+          @mapbox/tilelive-vector \
+          @mapbox/tilelive-bridge \
+          @mapbox/tilelive-mapnik
 
 VOLUME /tm2source /export
 ENV SOURCE_PROJECT_DIR=/tm2source EXPORT_DIR=/export TILELIVE_BIN=tl
