@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 RUN npm install -g \
           tl@0.10.2 \
           mapnik@4.0.0 \
-          @mapbox/mbtiles@mbtiles@0.10.0 \
+          @mapbox/mbtiles@0.10.0 \
           @mapbox/tilelive@6.0.0 \
           tilelive-tmsource@0.8.1 \
           @mapbox/tilelive-vector@4.0.0 \
