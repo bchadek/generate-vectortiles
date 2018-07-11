@@ -1,4 +1,4 @@
-FROM node:9
+FROM node:6.10
 MAINTAINER Lukas Martinelli <me@lukasmartinelli.ch>
 
 WORKDIR /usr/src/app
