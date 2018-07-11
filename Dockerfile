@@ -3,7 +3,7 @@ MAINTAINER Lukas Martinelli <me@lukasmartinelli.ch>
 
 WORKDIR /usr/src/app
 RUN npm install -g \
-          tl@0.10.2 \
+          tl@0.8.1 \
           mapnik@3.7.2 \
           @mapbox/mbtiles@0.10.0 \
           tilelive@5.12.2 \
